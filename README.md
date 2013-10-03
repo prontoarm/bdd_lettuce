@@ -2,6 +2,7 @@ lettuce test
 =======
 
 base lettuce setup
+[lettuce webdrive](https://github.com/bbangert/lettuce_webdriver)
 
 ## Installation
 

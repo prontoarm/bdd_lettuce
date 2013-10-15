@@ -8,6 +8,11 @@ def factorial_input(self, number):
 def calculate_factorial(step):
     world.result = factorial(world.factorial_input)
 
+@step(r'I see the number (\d+)')
+def check_number(step, expected):
+    expected = int(expected)
+    assert world.result == expected, "Got %d" % world.result
+
 def factorial(number):
     if (number <= 1):
         return 1

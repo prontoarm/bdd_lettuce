@@ -3,10 +3,11 @@ Feature: Palindromes
     So that I can demonstrate lettuce
     I want to know whether a given string is a palindrome
 
-    Scenario: Palindrome examples
+    Scenario Outline: Palindrome examples
         Given the input string <input_string>
         When I ask whether it is a palindrome
         Then I should get the response <result>
+
         Examples:
             | input_string  | result |
             | wow           | Yes    |

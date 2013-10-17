@@ -7,11 +7,11 @@ import sys
 
 @before.all
 def before_all():
-  #world.browser = webdriver.Firefox()
-  #world.browser.maximize_window()
-  options = webdriver.ChromeOptions()
-  options.add_argument("--start-maximized")
-  world.browser = webdriver.Chrome(chrome_options=options)
+  world.browser = webdriver.Firefox()
+  world.browser.maximize_window()
+  #options = webdriver.ChromeOptions()
+  #options.add_argument("--start-maximized")
+  #world.browser = webdriver.Chrome(chrome_options=options)
 
 @after.all
 def after_all(total):
